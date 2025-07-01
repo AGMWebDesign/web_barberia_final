@@ -227,5 +227,52 @@ a {
     font-size: 0.9rem;
 }
 
-/* -------- RESPONSIVE MENU (opcional más adelante) -------- */
-/* Aquí podemos añadir estilo al menú móvil si lo quieres después */
+/* -- Responsive --*/
+@media (max-width: 768px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    .header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .nav ul li {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .contacto input,
+    .contacto textarea {
+        font-size: 0.9rem
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+}
